@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solaria Apartment — Sárvár Wellness Escape</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <input type="checkbox" id="nav-toggle" hidden>
+
+  <header class="site-header">
+    <a class="logo" href="#top">Solaria <span>Residence</span></a>
+    <label for="nav-toggle" class="menu-btn" aria-label="Open menu">
+      <span></span><span></span>
+    </label>
+    <nav class="nav">
+      <a href="#apartment">The apartment</a>
+      <a href="#spa">Spa &amp; town</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#plans">Floor plan</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img src="images/exterior-facade.jpg" alt="R31 Residence facade on Rákóczi utca, Sárvár">
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Sárvár · Western Hungary</p>
+        <h1>Solaria Apartment</h1>
+        <p class="lede">Wake up in a peaceful spa town, a short walk from the thermal baths. A furnished home for couples and families.</p>
+        <div class="hero-meta">
+          <span>Rákóczi utca 31/B</span>
+          <span>Apartment B7</span>
+          <span>1 bedroom</span>
+          <span>1 bath</span>
+        </div>
+        <a class="btn" href="#contact">Enquire with Szilard</a>
+      </div>
+    </section>
+
+    <section id="apartment" class="section featured">
+      <div class="section-intro">
+        <p class="eyebrow">Your comfortable apartment</p>
+        <h2>A quiet home base for a Hungarian wellness stay.</h2>
+      </div>
+      <div class="featured-grid">
+        <div class="prose">
+          <p>Nothing beats waking up refreshed in a quiet spa town in Western Hungary, famous for its healing thermal waters. Located right in the heart of Sárvár, this apartment is just steps away from the renowned Sárvár Spa and Wellness Centre (Gyógy- és Wellnessfürdő).</p>
+          <p>Perfect for couples seeking a romantic getaway or families with children looking for a relaxing break. This is more than accommodation — it is your peaceful home base for a true Hungarian wellness experience.</p>
+          <ul class="amenity-list">
+            <li>Fully air-conditioned for comfort in any season</li>
+            <li>Modern kitchen with dishwasher, extra-large refrigerator, microwave, stovetop, and kitchenware</li>
+            <li>Washing machine</li>
+            <li>Free high-speed WiFi</li>
+            <li>Spacious dining area with a large table</li>
+            <li>Comfortable sofa, smart TV, and wardrobe</li>
+            <li>Fresh, clean, and bright interiors</li>
+          </ul>
+          <ul class="facts">
+            <li><strong>Address</strong> Rákóczi utca 31/B, 9600 Sárvár</li>
+            <li><strong>Building</strong> R31 Residence · Onyx Apartmanház</li>
+            <li><strong>Unit</strong> B7, upper floor</li>
+            <li><strong>Layout</strong> Hall, kitchen-dining, living, bedroom, bath, balcony</li>
+          </ul>
+        </div>
+        <figure class="featured-side">
+          <img src="images/balcony.jpg" alt="Balcony with two chairs and evening light">
+          <figcaption>Covered balcony at dusk.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="spa" class="section location">
+      <div class="section-intro">
+        <p class="eyebrow">Prime location</p>
+        <h2>Steps from the spa, in the centre of town.</h2>
+      </div>
+      <div class="location-grid">
+        <article>
+          <h3>The Sárvár Spa &amp; Wellness Centre</h3>
+          <p>Just a short walk from the apartment, one of Hungary’s best thermal spas:</p>
+          <ul class="amenity-list">
+            <li>Indoor and outdoor thermal pools</li>
+            <li>Adventure pools for fun and relaxation</li>
+            <li>Saunas and wellness treatments</li>
+            <li>Professional medical services</li>
+          </ul>
+          <p>Whether you come for healing, rejuvenation, or a peaceful wellness break, this is the ideal place. The area is family-friendly, with something for everyone.</p>
+        </article>
+        <article>
+          <h3>Town and day trips</h3>
+          <p>Sárvár is a compact, authentic Hungarian town that feels far from the crowds of Budapest or Lake Balaton. Reach everything on foot or by bike:</p>
+          <ul class="amenity-list">
+            <li>Nádasdy Castle — Renaissance castle and Nádasdy Ferenc Museum</li>
+            <li>Sárvár Arboretum (Várpark) — historic park beside the castle</li>
+            <li>Boating Lake (Csónakázó-tó) — islands, bridges, and walking paths</li>
+            <li>Day trips to Szombathely Cathedral and Sümeg Castle</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="section-intro">
+        <p class="eyebrow">Photographs</p>
+        <h2>The rooms as they are.</h2>
+      </div>
+
+      <input type="radio" name="gallery" id="g1" checked hidden>
+      <input type="radio" name="gallery" id="g2" hidden>
+      <input type="radio" name="gallery" id="g3" hidden>
+      <input type="radio" name="gallery" id="g4" hidden>
+      <input type="radio" name="gallery" id="g5" hidden>
+      <input type="radio" name="gallery" id="g6" hidden>
+      <input type="radio" name="gallery" id="g7" hidden>
+      <input type="radio" name="gallery" id="g8" hidden>
+      <input type="radio" name="gallery" id="g9" hidden>
+
+      <div class="viewer">
+        <figure class="slide s1"><img src="images/exterior-facade.jpg" alt="Street facade of R31 Residence"><figcaption>R31 Residence, street front</figcaption></figure>
+        <figure class="slide s2"><img src="images/exterior-courtyard.jpg" alt="Inner courtyard and paved drive"><figcaption>Courtyard</figcaption></figure>
+        <figure class="slide s3"><img src="images/balcony.jpg" alt="Terrace table and chairs at sunset"><figcaption>Balcony</figcaption></figure>
+        <figure class="slide s4"><img src="images/living-sofa.jpg" alt="Mustard and grey corner sofa in the living room"><figcaption>Living room</figcaption></figure>
+        <figure class="slide s5"><img src="images/living-tv.jpg" alt="Living room television wall and balcony doors"><figcaption>Living room toward the balcony</figcaption></figure>
+        <figure class="slide s6"><img src="images/kitchen.jpg" alt="Kitchen counter, washer, and dining table"><figcaption>Kitchen</figcaption></figure>
+        <figure class="slide s7"><img src="images/dining.jpg" alt="Dining table set for breakfast beside the oven tower"><figcaption>Dining</figcaption></figure>
+        <figure class="slide s8"><img src="images/bedroom.jpg" alt="Bedroom with double bed and window"><figcaption>Bedroom</figcaption></figure>
+        <figure class="slide s9"><img src="images/bathroom.jpg" alt="Shower bathroom with marble-look tile"><figcaption>Bathroom</figcaption></figure>
+      </div>
+
+      <div class="thumbs">
+        <label for="g1"><img src="images/exterior-facade.jpg" alt=""></label>
+        <label for="g2"><img src="images/exterior-courtyard.jpg" alt=""></label>
+        <label for="g3"><img src="images/balcony.jpg" alt=""></label>
+        <label for="g4"><img src="images/living-sofa.jpg" alt=""></label>
+        <label for="g5"><img src="images/living-tv.jpg" alt=""></label>
+        <label for="g6"><img src="images/kitchen.jpg" alt=""></label>
+        <label for="g7"><img src="images/dining.jpg" alt=""></label>
+        <label for="g8"><img src="images/bedroom.jpg" alt=""></label>
+        <label for="g9"><img src="images/bathroom.jpg" alt=""></label>
+      </div>
+    </section>
+
+    <section id="plans" class="section plans">
+      <div class="section-intro">
+        <p class="eyebrow">Floor plan</p>
+        <h2>B7 — upper-floor layout.</h2>
+      </div>
+      <div class="plan-block">
+        <figure>
+          <img src="images/floor-plan.jpg" alt="Floor plan of apartment B7, Rákóczi utca 31/B, Sárvár">
+        </figure>
+        <div class="plan-notes">
+          <h3>Onyx Apartmanház · B7</h3>
+          <p>From the entrance: hall and shower room, then kitchen and dining. The living room faces the covered balcony. The bedroom is a closed room off the hall.</p>
+          <dl>
+            <div><dt>Előtér</dt><dd>Entrance hall</dd></div>
+            <div><dt>Konyha + étkező</dt><dd>Kitchen and dining</dd></div>
+            <div><dt>Nappali</dt><dd>Living room</dd></div>
+            <div><dt>Hálószoba</dt><dd>Bedroom</dd></div>
+            <div><dt>Zuhanyzó</dt><dd>Shower bath</dd></div>
+            <div><dt>Fedett erkély</dt><dd>Covered balcony</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-grid">
+        <div class="agent">
+          <div>
+            <p class="eyebrow">Host</p>
+            <h2>Szilard Incze</h2>
+            <p>Write or call to ask about dates, a viewing, or a stay in Sárvár. WhatsApp is usually the fastest reply.</p>
+            <ul class="contact-list">
+              <li><span>Name</span> Szilard Incze</li>
+              <li><span>Email</span> <a href="mailto:inczes@msn.com">inczes@msn.com</a></li>
+              <li><span>Phone</span> <a href="tel:+491738316028">+49 173 8316028</a></li>
+              <li><span>WhatsApp</span> <a href="https://wa.me/491738316028" target="_blank" rel="noopener">+49 173 8316028</a></li>
+              <li><span>Address</span> Rákóczi utca 31/B, 9600 Sárvár</li>
+            </ul>
+            <div class="contact-actions">
+              <a class="btn" href="mailto:inczes@msn.com">Email Szilard</a>
+              <a class="btn btn-ghost" href="https://wa.me/491738316028" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="inquiry" action="mailto:inczes@msn.com" method="get" enctype="text/plain">
+          <h3>Send a message</h3>
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Interest
+            <select name="subject">
+              <option>Stay dates</option>
+              <option>Viewing appointment</option>
+              <option>Question about the apartment</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="body" rows="5" placeholder="Preferred dates, number of guests, or a question…"></textarea>
+          </label>
+          <button type="submit" class="btn">Open email to inczes@msn.com</button>
+          <p class="form-note">This opens your email app addressed to Szilard. Or use WhatsApp for a quicker reply.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Solaria Apartment · Szilard Incze · inczes@msn.com</p>
+    <p>+49 173 8316028</p>
+  </footer>
+</body>
+</html>
