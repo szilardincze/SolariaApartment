@@ -163,12 +163,43 @@ h3 { font-size: 1.7rem; }
   color: var(--gold);
 }
 
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.langs {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.langs a {
+  padding: 0.28rem 0.45rem;
+  color: var(--muted);
+}
+
+.langs a:hover,
+.langs a.is-active {
+  color: var(--ink);
+}
+
+.langs a.is-active {
+  border-bottom: 1px solid var(--gold);
+}
+
 .nav {
   display: flex;
   align-items: center;
   gap: 1.6rem;
   font-size: 0.86rem;
   font-weight: 400;
+  margin-left: auto;
+  margin-right: 1.2rem;
 }
 
 .nav a:hover {
@@ -513,6 +544,10 @@ h3 { font-size: 1.7rem; }
 @media (max-width: 860px) {
   .menu-btn {
     display: block;
+  }
+
+  .header-tools {
+    margin-left: auto;
   }
 
   .nav {
