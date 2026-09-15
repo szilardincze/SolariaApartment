@@ -333,30 +333,63 @@ h3 { font-size: 1.7rem; }
 
 .gallery .viewer {
   position: relative;
-  background: #ebe4d8;
-  overflow: hidden;
+  background: #1c1915;
+  min-height: 28rem;
 }
 
 .gallery .slide {
   display: none;
+  position: relative;
+  margin: 0 auto;
+  padding: 1.2rem 4.2rem 1rem;
+  text-align: center;
 }
 
 .gallery .slide img {
-  width: 100%;
-  height: min(72vh, 52vw);
-  min-height: 18rem;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 82vh;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .gallery .slide figcaption {
-  position: absolute;
-  left: 1.2rem;
-  bottom: 1.2rem;
-  color: #fff;
+  margin-top: 0.75rem;
+  color: #f4efe6;
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
   font-size: 1.1rem;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 2.6rem;
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(251, 248, 243, 0.92);
+  color: var(--ink);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-btn:hover {
+  background: #fff;
+}
+
+.nav-btn.prev {
+  left: 0.6rem;
+}
+
+.nav-btn.next {
+  right: 0.6rem;
 }
 
 #g1:checked ~ .viewer .s1,
@@ -600,8 +633,20 @@ h3 { font-size: 1.7rem; }
     height: 78vh;
   }
 
+  .gallery .slide {
+    padding: 0.8rem 3rem 0.8rem;
+  }
+
   .gallery .slide img {
-    height: 62vw;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+  }
+
+  .nav-btn {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.7rem;
   }
 
   .thumbs {
